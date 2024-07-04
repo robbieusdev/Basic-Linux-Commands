@@ -1,6 +1,5 @@
 # Termux
 #### Basic commands with termux.
-#### set launges: <a href="You launges has been used!">You launges has been used!</a>
 ---
    #### Basic commands.
    * `Ls - list of files and directories`
