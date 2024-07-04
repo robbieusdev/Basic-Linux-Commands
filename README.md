@@ -1,140 +1,137 @@
 # Termux
 #### Basic commands with termux.
-
-#### set language: <a href="Read/README_RU.md">Russian</a> <a href="Read/README_EN.md">English</a> <a href="Read/README_UA.md">Ukraine</a>
-
+#### set launges: <a href="You launges has been used!">You launges has been used!</a>
 ---
-#### Basic commands.
-* ` ls – список файлов и каталогов`
-* ` ls -al – форматированный список со скрытыми каталогами и файлами`
-* ` cd dir – сменить директорию на dir`
-* ` cd – сменить на домашний каталог`
-* ` pwd – показать текущий каталог`
+   #### Basic commands.
+   * `Ls - list of files and directories`
+   * `Ls -al - formatted list with hidden directories and files`
+   * `Cd dir - change directory to dir`
+   * `Cd - change to home directory`
+   * `Pwd - show the current Catalog`
 
----
-#### commands with files.
-* `mkdir dir – создать каталог dir`
-* `rm file – удалить file`
-* `rm -r dir – удалить каталог dir`
-* `rm -r -f /path – удалить каталог dir`
-* `rm -f file – удалить форсированно file`
-* `rm -rf dir – удалить форсированно каталог dir`
-* `cp file1 file2 – скопировать file1 в file2`
-* `cp -r dir1 dir2 – скопировать dir1 в dir2; создаст каталог dir2, если он не существует`
-* `mv file1 file2 – переименовать или переместить file1 в file2. если file2 существующий каталог — переместить file1 в каталог file2`
-* `ln -s file link – создать символическую ссылку link к файлу file`
-* `touch file – создать file`
+   ---
+   #### commands with files.
+   * `Mkdir dir - create a dir directory`
+   * `Rm file - delete the file`
+   * `Rm -r dir - delete directory dir`
+   * `Rm -r -f / path - delete directory dir`
+   * `Rm -f file - delete a forced file`
+   * `Rm -rf dir - forcibly delete the dir directory`
+   * `Cp file1 file2 - copy file1 to file2`
+   * `Cp -r dir1 dir2 - copy dir1 to dir2;  will create a dir2 directory if it does not exist`
+   * `Mv file1 file2 - rename or move file1 to file2.  if file2 is an existing directory, move file1 to the file2 directory
+   * `Ln -s file link - create a symbolic link link to the file file`
+   * `Touch file - create a file`
 
----
-#### files info
-* `cat > file – направить стандартный ввод в file`
-* `more file – вывести содержимое file`
-* `head file – вывести первые 10 строк file`
-* `tail file – вывести последние 10 строк file`
-* `tail -f file – вывести содержимое file по мере роста, начинает с последних 10 строк`
+   ---
+   #### file information
+   * `Cat> file - send standard input to the file`
+   * `More file - output the contents of the file`
+   * `Head file - print the first 10 lines of the file`
+   * `Tail file - display the last 10 lines of the file`
+   * `Tail -f file - output the file as it grows, starting with the last 10 lines`
 
----
-#### commands for process management`
-* `ps – вывести ваши текущие активные процессы`
-* `top – показать все запущенные процессы`
-* `kill pid – убить процесс с id pid`
-* `killall proc – убить все процессы с именем proc`
-* `bg – список остановленных и фоновых задач; продолжить выполнение остановленной задачи в фоне`
-* `fg – выносит на передний план последние задачи`
-* `fg n – вынести задачу n на передний план`
-*`chmod octal file – сменить права file на octal, раздельно для пользователя, группы и для всех добавлением:`
-4 – чтение (r)
-2 – запись (w)
-1 – исполнение (x)
+   ---
+   #### commands for process management`
+   * `Ps - display your currently active processes`
+   * `Top - show all running processes`
+   * `Kill pid - kill the process with id pid`
+   * `Killall proc - kill all processes named proc`
+   * `Bg - list of stopped and background tasks;  continuation of the stopped task in the background`
+   * `Fg - brings to the fore the last tasks`
+   * `Fg n - bring task n to the forefront`
+   * Eight-year file `chmod - change file rights to eight, separately for user, group and for all by adding:`
+   4 - reading (r)
+   2 - record (w)
+   1 - execution (x)
 
----
-#### example
-* `chmod 777 – чтение, запись, исполнение для всех`
-* `chmod 755 – rwx для владельца, rx для группы и остальных`
-Дополнительные опции: man chmod.
+   ---
+   #### example
+   * `Chmod 777 - read, write, execute for everyone`
+   * `Chmod 755 - rwx for owners, rx for group and`
+   Additional options: man chmod.
 
----
-#### commands for SSH
+   ---
+   #### commands for SSH
 
-* `ssh user@host – подключится к host как user`
-* `ssh -p port user@host – подключится к host на порт port как user`
-* `ssh-copy-id user@host – добавить ваш ключ на host для user чтобы включить логин без пароля и по ключам`
+   * `Ssh user @ host - will connect to host as user`
+   * `Ssh -p port user @ host - will connect to host on port port as user`
+   * `Ssh-copy-id user @ host - your key to host to add login without password and by keys`
 
----
-#### search commands
-* `grep pattern files – искать pattern в files`
-* `grep -r pattern dir – искать рекурсивно pattern в dir`
-* `command | grep pattern – искать pattern в выводе command`
-* `locate file – найти все файлы с именем file`
+   ---
+   #### search commands
+   * `Grep pattern files - search for template files`
+   * `Grep -r pattern dir - search recursively pattern in dir`
+   * `Command |  grep pattern - look for a template in the command output`
+   * `Locate file - find all files named file`
 
----
-#### system info
-* `date – вывести текущую дату и время`
-* `cal – вывести календарь на текущий месяц`
-* `uptime – показать текущий аптайм`
-* `whoami – имя, под которым вы залогинены`
-* `uname -a – показать информацию о ядре`
-* `cat /proc/cpuinfo – информация ЦПУ`
-* `cat /proc/meminfo – информация о памяти`
-* `man command – показать мануал для command`
-* `df – показать инф. о использовании дисков`
-* `du – вывести “вес” текущего каталога`
-* `free – использование памяти и swap`
-* `whereis app – возможное расположение программы app`
-* `which app – какая app будет запущена по умолчанию`
+   ---
+   #### system information
+   * `Date - display the current date and time`
+   * `Cal - display the calendar for the current month`
+   * `Uptime - show the current uptime`
+   * `Whoami - the name under which you are logged in`
+   * `Uname -a - show kernel information`
+   * `Cat / proc / cpuinfo - CPU information`
+   * `Cat / proc / meminfo - memory information`
+   * `Man command - show manual for command`
+   * `Df - show info.  about memory of disks`
+   * `Du - display the" weight "of the current directory`
+   * `Free - memory usage and swap`
+   * `Whereis app - possible location of the app`
+   * `Which app - which program will run by default`
 
----
-#### archiving
-* `tar cf file.tar files – создать tar-архив с именем file.tar содержащий files`
-* `tar xf file.tar – распаковать file.tar`
-* `tar czf file.tar.gz files – создать архив tar с сжатием Gzip`
-* `tar xzf file.tar.gz – распаковать tar с Gzip`
-* `tar cjf file.tar.bz2 – создать архив tar с сжатием Bzip2`
-* `tar xjf file.tar.bz2 – распаковать tar с Bzip2`
-* `gzip file – сжать file и переименовать в file.gz`
-* `gzip -d file.gz – разжать file.gz в file`
+   ---
+   #### archiving
+   * `Tar cf file.tar files - create a tar archive with a file named tar.tar break files`
+   * `Tar xf file.tar - unzip file.tar`
+   * `Tar czf file.tar.gz files - create a tar archive with Gzip compression`
+   * `Tar xzf file.tar.gz - unpack tar from Gzip`
+   * `Tar cjf file.tar.bz2 - create a tar archive with Bzip2 compression`
+   * `Tar xjf file.tar.bz2 - unpack tar from Bzip2`
+   * `Gzip file - compress the file and rename it to file.gz`
+   * `Gzip -d file.gz - expand file.gz into a file`
 
----
-#### network
-* `ping host – пропинговать host и вывести результат`
-* `whois domain – получить информацию whois для domain`
-* `dig domain – получить DNS информацию domain`
-* `dig -x host – реверсивно искать host`
-* `wget file – скачать file`
-* `wget -c file – продолжить остановленную закачку`
+   ---
+   #### network
+   * `Ping host - ping the host and display the result`
+   * `Whois domain - get whois information for the domain`
+   * `Dig domain - get DNS information about the domain`
+   * `Dig -x host - reverse search for a host`
+   * `Wget file - download file`
+   * `Wget -c file - continue stopped downloading`
 
----
-#### installation of packages and work with them
-* `pkg install package - устанавливает package`
-* `pkg remove package - удаляет package`
-* `pkg search package - ищет в репозитории package`
-* `pkg list-installed - выведет список установленных пакетов`
+   ---
+   #### installing and working with packages
+   * `Pkg install package - installs the package`
+   * `Pkg remove package - removes the package`
+   * `Pkg search package - searches the package repository`
+   * `Pkg list-installed - will display a list of downloads`
 
----
-#### installation from source codes.
-* `./configure`
-* `make`
-* `make install`
+   ---
+   #### installation from source codes.
+   * `./configure`
+   * `Make`
+   * `Make install`
 
-installation of deb packages
+   installation of deb packages
 
-* `dpkg -i pkg.deb – установить пакет (Debian)`
+   * `Dpkg -i pkg.deb - install package (Debian)`
 
----
-#### commands with android
-* `adb (Android Debug Bridge) — утилита для отладки Андроид устройств с ПК`
-* `pm — менеджер пакетов`
-* `pm list packages (смотрим список установленных пакетов)`
-* `am — менеджер для запуска и остановки приложений`
+   ---
+   #### commands from android
+   * `Adb (Android Debug Bridge) - a utility for debugging Android devices from a PC`
+   * `Pm - package manager`
+   * `Pm list packages (see the list of downloaded packages)`
+   * `Am - manager to start and stop applications`
 
----
-#### keyboard shortcuts
-* `Ctrl+C – завершить текущую команду`
-* `Ctrl+Z – остановить текущую команду, продолжть с fg на переднем плане или bg в фоне`
-* `Ctrl+D – разлогиниться, тоже самое, что и exit`
-* `Ctrl+W – удалить одно слово в текущей строке`
-* `Ctrl+U – удалить строку`
-* `!! — повторить последнюю команду`
-* `exit – разлогиниться`
-
-by mishakorzhik: report bug: developer.mishakorzhik@gmail.com
+   ---
+   #### hotkeys
+   * `Ctrl + C complete - current command`
+   * `Ctrl + Z - stop the current command, continue with fg in the foreground or bg in the background`
+   * `Ctrl + D - log in, the same as exit`
+   * `Ctrl + W - delete one word in the current line`
+   * `Ctrl + U - delete string`
+   * `!!  - repeat the last command`
+   * `Exit - log out`
+###### by misha korzhik: report bug: misakorzik528@gmail.com
